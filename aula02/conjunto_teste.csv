@@ -1,0 +1,26 @@
+id,entrada,saida_esperada,dificuldade,observacao
+1,"Plaqueta rasgada ao meio, não dá para escanear.",etiqueta_danificada,facil,
+2,"Número apagado, não consigo ler nem a olho.",etiqueta_ilegivel,facil,
+3,"Etiqueta impressa em papel, sem código de barras.",plaqueta_impressa,facil,
+4,Número gravado direto no ferro do armário.,plaqueta_gravada_material,facil,
+5,"Leitor sem bateria, plaqueta normal.",outro,facil,
+6,Plaqueta quebrada e com um pedaço faltando.,etiqueta_danificada,facil,
+7,"Tinta desbotada, os números sumiram quase todos.",etiqueta_ilegivel,facil,
+8,Patrimônio gravado a punção na base da mesa.,plaqueta_gravada_material,facil,
+9,A etiqueta é impressa e o leitor não reconhece.,plaqueta_impressa,facil,
+10,"Celular sem acesso à câmera, digitei.",outro,facil,
+11,"Etiqueta rasgada e também meio apagada, mas deu para ler o final.",etiqueta_danificada,media,dois motivos; causa principal = rasgada
+12,"Plaqueta suja e manchada, só consegui ler depois de esfregar.",etiqueta_ilegivel,media,
+13,"Tem só o número impresso, sem barras, em papel comum.",plaqueta_impressa,media,
+14,"Número em alto relevo no metal, sem adesivo.",plaqueta_gravada_material,media,
+15,"Bem dentro de um nicho fechado a chave, vi o número pela fresta.",outro,media,
+16,Adesivo desfeito pela umidade.,etiqueta_danificada,media,
+17,"Código borrado, o leitor falha e preciso conferir dígito a dígito.",etiqueta_ilegivel,media,
+18,etiqueta rasurada e amassada nao leu,etiqueta_ilegivel,dificil,ambíguo: ilegível x danificada; sem pontuação e com erro de grafia
+19,"digitei pq o leitor nao pega, plaqueta ta velha",etiqueta_ilegivel,dificil,ambíguo: falha do leitor (outro) x plaqueta velha; informal
+20,Plaqueta nova impressa mas o leitor não funcionou hoje.,plaqueta_impressa,dificil,ambíguo: plaqueta impressa x falha do leitor (outro)
+21,"Gravação quase apagada no metal, difícil de enxergar.",plaqueta_gravada_material,dificil,ambíguo: gravada x ilegível
+22,"O bem não tem plaqueta, a descrição bate com o cadastro do espaço.",outro,dificil,ausência de plaqueta
+23,"Plaqueta torta, descolando, e a tinta fraca.",etiqueta_danificada,dificil,mistura danificada e ilegível
+24,Número impresso a tinta direto no plástico do equipamento.,plaqueta_impressa,dificil,ambíguo: impressa x gravada no material
+25,Digitei porque estava com pressa e o corredor estava cheio.,outro,dificil,justificativa que não descreve a plaqueta

@@ -1,0 +1,61 @@
+texto,categoria
+"Plaqueta rasgada no canto, o código de barras ficou cortado e o leitor não pega.",etiqueta_danificada
+"Etiqueta amassada e com um pedaço faltando, digitei o número que sobrou legível.",etiqueta_danificada
+"A plaqueta está quebrada ao meio, só consegui ler o número de uma das metades.",etiqueta_danificada
+"Etiqueta descolando e dobrada, o código não fica plano para ler.",etiqueta_danificada
+Plaqueta com risco profundo em cima do código de barras.,etiqueta_danificada
+"Adesivo do patrimônio está queimado, provavelmente por estar perto de uma tomada.",etiqueta_danificada
+A etiqueta foi arrancada pela metade quando mudaram a mesa de lugar.,etiqueta_danificada
+"Plaqueta torta e rachada, o leitor não consegue focar.",etiqueta_danificada
+Etiqueta com marca de umidade e parte do papel desfeita.,etiqueta_danificada
+"Plaqueta de alumínio amassada, não dá para escanear.",etiqueta_danificada
+"Etiqueta rasgada, mas deu para ver o numero inteiro a olho.",etiqueta_danificada
+"Plaqueta partida no armário, achei o pedaço com o número.",etiqueta_danificada
+"Número apagado pelo sol, não dá para ler o código nem a olho nu.",etiqueta_ilegivel
+"A tinta da etiqueta desbotou, o leitor não reconhece as barras.",etiqueta_ilegivel
+"Etiqueta suja de gordura, só consegui ler depois de limpar com cuidado.",etiqueta_ilegivel
+"Código de barras borrado, tive que conferir os dígitos com a lupa do celular.",etiqueta_ilegivel
+"Número muito apagado, fiquei em dúvida entre 3 e 8 no último dígito.",etiqueta_ilegivel
+"Plaqueta desgastada pelo uso, os números quase sumiram.",etiqueta_ilegivel
+"Etiqueta com tinta esmaecida, o leitor não lê e a câmera também não.",etiqueta_ilegivel
+"Rasurada com caneta por alguém, difícil ler o número original.",etiqueta_ilegivel
+"Barras sem contraste, parece que a impressão ficou fraca.",etiqueta_ilegivel
+Número ilegível por causa de cola que vazou sobre a etiqueta.,etiqueta_ilegivel
+"Caracteres apagados, consegui só pela foto ampliada.",etiqueta_ilegivel
+Etiqueta lavada com produto de limpeza e o código sumiu.,etiqueta_ilegivel
+"Plaqueta é de papel impresso a laser, o código de barras não é lido pelo leitor.",plaqueta_impressa
+"Etiqueta impressa em impressora comum, sem código de barras, só o número.",plaqueta_impressa
+"O patrimônio tem uma plaqueta impressa provisória, tive que digitar.",plaqueta_impressa
+"Adesivo impresso na própria secretaria, o leitor não reconhece o formato.",plaqueta_impressa
+"Plaqueta impressa em papel sulfite colada com fita, sem leitura por código.",plaqueta_impressa
+A etiqueta impressa é de tamanho pequeno e o leitor não alcança.,plaqueta_impressa
+"Bem com plaqueta impressa nova, mas o código não passa no leitor.",plaqueta_impressa
+"Número só impresso, sem as barras.",plaqueta_impressa
+"Etiqueta impressa em papel vegetal, o leitor falha.",plaqueta_impressa
+"Plaqueta do tipo impressa, digitei o número que aparece embaixo.",plaqueta_impressa
+"Tem uma etiqueta impressa de reposição, sem código de barras legível por máquina.",plaqueta_impressa
+"Plaqueta impressa colada por cima da antiga, o leitor não lê.",plaqueta_impressa
+"O número está gravado direto no metal da mesa, não tem etiqueta para ler.",plaqueta_gravada_material
+Patrimônio gravado a punção na estrutura da cadeira.,plaqueta_gravada_material
+Número gravado em baixo relevo na madeira do armário.,plaqueta_gravada_material
+"Plaqueta gravada no material, sem código de barras, digitei o número.",plaqueta_gravada_material
+"Gravação a laser no corpo do equipamento, o leitor não tem o que ler.",plaqueta_gravada_material
+O número do bem está gravado na carcaça do computador.,plaqueta_gravada_material
+Número esculpido na lateral do arquivo de aço.,plaqueta_gravada_material
+"Identificação gravada no próprio móvel, não existe adesivo.",plaqueta_gravada_material
+"Plaqueta de metal gravada, números em relevo, sem barras.",plaqueta_gravada_material
+"Gravado na base do projetor, tive que virar o aparelho para ler.",plaqueta_gravada_material
+"O patrimônio está gravado em ferro na estante, digitei o número.",plaqueta_gravada_material
+Número marcado a fogo na madeira da mesa.,plaqueta_gravada_material
+"Câmera do celular sem permissão, não consegui escanear.",outro
+O leitor estava sem bateria e a plaqueta está em perfeito estado.,outro
+"Bem está atrás de um armário pesado, só consegui enxergar o número de lado.",outro
+"Sem sinal na sala, o aplicativo não carregou a câmera.",outro
+Bem sem plaqueta; o servidor do setor informou o número do patrimônio.,outro
+"Equipamento muito alto, na prateleira de cima, não alcancei para escanear.",outro
+"Etiqueta colocada em local de difícil acesso, dentro da gaveta fixa.",outro
+"O leitor travou depois de algumas leituras, reiniciei e digitei o restante.",outro
+"Estou com pressa porque a sala será fechada, digitei os últimos itens.",outro
+"Plaqueta caiu e estava solta em cima da mesa, associei ao bem.",outro
+"Celular com a tela quebrada, difícil de usar a câmera.",outro
+"Não sei, digitei por engano antes de tentar ler.",outro
