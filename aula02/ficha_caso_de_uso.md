@@ -31,7 +31,7 @@ O grupo **não tinha um modelo próprio desta funcionalidade** do bloco anterior
 - [ ] **Complementar**
 - [x] **Híbrido** — cada um atua onde é melhor.
 
-**Justificativa:** nos 25 exemplos os erros dos dois são complementares: só o classificador acertou 7, só o LLM (Qwen2.5-1.5B, zero-shot, 60% de acurácia) acertou 4, e escolher sempre o certo daria 88%. O LLM não saiu do formato em nenhuma resposta (0/25) e dispensa dados rotulados; o classificador responde em milissegundos (o LLM local levou segundos em CPU) e é gratuito. Substituir não se sustenta (o LLM pequeno ficou abaixo do classificador). Ainda **não sabemos como rotear**: a confiança da regressão logística não discrimina bem, e o desenho do roteamento será o foco da oficina (inclusive testar um LLM maior).
+**Justificativa:** nos 25 exemplos os erros dos dois são complementares: só o classificador acertou 7, só o LLM (Qwen2.5-1.5B, zero-shot, 60% de acurácia) acertou 4, e escolher sempre o certo daria 88%. O LLM não saiu do formato em nenhuma resposta (0/25) e dispensa dados rotulados; o classificador responde em ~7 ms e o LLM local (Qwen 1,5B) em ~0,23 s na GPU T4, ambos gratuitos por rodarem localmente. Substituir não se sustenta (o LLM pequeno ficou abaixo do classificador). Ainda **não sabemos como rotear**: a confiança da regressão logística não discrimina bem, e o desenho do roteamento será o foco da oficina (inclusive testar um LLM maior).
 
 ## 4. Entrada e saída
 
@@ -47,7 +47,7 @@ Tamanho típico da entrada, em tokens (Parte A): **cerca de 13 tokens** (média 
 | Critério | Meta |
 |---|---|
 | Métrica principal e limiar | Acurácia **≥ 85%** no `conjunto_teste.csv` e **≥ 60%** nos 8 exemplos difíceis (referência atual: 72% e 38%; teto observado de 88% com o híbrido ideal) |
-| Latência máxima por requisição | **≤ 2 s** (p95) quando o LLM é acionado; classificador próprio **< 100 ms** (hoje 16 a 59 ms; o LLM local em CPU levou ~7,5 s, **a remedir na GPU/API**) |
+| Latência máxima por requisição | **≤ 2 s** (p95) quando o LLM é acionado; classificador próprio **< 100 ms** (medido na T4: classificador 4 a 7 ms; LLM Qwen 1,5B local ~0,23 s por chamada, 7,5 s em CPU; um LLM maior ou via API ainda será medido na oficina) |
 | Custo máximo aceitável | **≤ R$ 0,01 por chamada** ao LLM e **≤ R$ 50/mês**, com no máximo ~30% das classificações indo ao LLM (volume mensal ainda a estimar) |
 | Outros | **100%** das saídas em JSON válido e com `motivo` dentre as 5 classes (referência atual em texto simples: 0 respostas fora do formato em 25) |
 
@@ -72,4 +72,4 @@ Tamanho típico da entrada, em tokens (Parte A): **cerca de 13 tokens** (média 
 
 ### Uso de IA generativa na elaboração da ficha
 
-Foi usada IA generativa (Claude Code, da Anthropic) para: ler o material da disciplina; propor a funcionalidade a partir do código do `sgm-php`; redigir os textos sintéticos de treino e de teste; adaptar o notebook guiado; executar o notebook e calcular as métricas; e redigir a primeira versão desta ficha. As decisões (funcionalidade, classes, hipótese, metas) e a conferência dos números foram feitas pelo integrante Arthur Bueno, que também executou o notebook. Os dados são sintéticos; nenhum dado real do sistema foi enviado a serviços externos.
+Foi usada IA generativa (Claude Code, da Anthropic) para: ler o material da disciplina; propor a funcionalidade a partir do código do `sgm-php`; redigir os textos sintéticos de treino e de teste; adaptar o notebook guiado; executar o notebook e calcular as métricas; e redigir a primeira versão desta ficha. As decisões (funcionalidade, classes, hipótese, metas) foram do integrante Arthur Bueno, que executou o notebook no Colab (GPU T4); os números desta ficha foram conferidos contra essa execução. Os dados são sintéticos; nenhum dado real do sistema foi enviado a serviços externos.
